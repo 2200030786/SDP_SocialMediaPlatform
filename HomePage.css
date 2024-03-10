@@ -1,0 +1,131 @@
+/* HomePage.css */
+.home-page {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  width: 100%;
+}
+
+
+.sidebar-left {
+  flex: 0 0 auto;
+  width: 200px;
+}
+
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.posts-section {
+  /* Remove display: flex; to display posts one below the other */
+}
+
+.sidebar-right {
+  flex: 0;
+}
+
+.followers-card,
+.post-card,
+.chat-card {
+  width: 100%;
+}
+
+.profile-card {
+  background-color: lightblue; /* Add light blue background color */
+  padding: 20px; /* Decrease the padding */
+  margin-left: 20px;
+  width: 150px; /* Add margin to the right side */
+}
+
+.profile-image {
+  width: 100%; /* Set the width of the profile image to fill the card */
+  height: 150px; /* Maintain aspect ratio */
+  border-radius: 50%;
+}
+.post-card {
+  background-color: pink;
+  width: calc(50% - 40px); /* Set the width of the post card to 100% minus the margin */
+  margin: 20px auto; /* Add margin to create space between cards and center them horizontally */
+}
+
+.post-image {
+  width: 100%; /* Make the post image fill the entire width of the card */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.chat-card {
+  width: 300px;
+  background-color: rgb(229, 138, 229); /* Add purple background color */
+  margin-top: 20px; /* Adjust the width of the chat card container */
+}
+
+.chat-list {
+  list-style-type: none; /* Remove bullet points */
+  padding: 0;
+}
+
+.other-profile-image {
+  width: 40px; /* Set the width of the profile image */
+  height: 40px; /* Set the height of the profile image */
+  border-radius: 50%; /* Make the profile image round */
+  margin-right: 10px; /* Add some spacing between profile image and profile name */
+  object-fit: cover; /* Ensure the image covers the entire area */
+}
+
+.chat-list li {
+  margin-bottom: 10px; /* Add spacing between chat messages */
+}
+
+.chat-message {
+  background-color: #f0f0f0; /* Background color of the chat message */
+  padding: 10px; /* Add padding to the chat message */
+  border-radius: 10px; /* Add rounded corners to the chat message */
+  max-width: 250px; /* Limit the maximum width of the chat message */
+}
+
+.chat-message img {
+  width: 30px; /* Set the width of the profile image */
+  height: 30px; /* Set the height of the profile image */
+  border-radius: 50%; /* Make the profile image round */
+  margin-right: 10px; /* Add spacing between the profile image and message */
+}
+
+.chat-message span {
+  display: block; /* Display the message text as a block element */
+}
+
+.chat-message .username {
+  font-weight: bold; /* Make the username bold */
+}
+
+.followers-card {
+  background-color: skyblue;
+  width: 250px; /* Adjust the width of the followers card */
+  margin-top: 20px; /* Add margin at the top */
+}
+
+.followers-list {
+  list-style-type: none; /* Remove bullet points */
+  padding: 0;
+}
+
+.follower-profile {
+  display: flex; /* Use flexbox to align items */
+  align-items: center; /* Align items vertically */
+  margin-bottom: 10px; /* Add spacing between followers */
+}
+
+.follower-profile-image {
+  width: 30px; /* Set the width of the follower profile image */
+  height: 30px; /* Set the height of the follower profile image */
+  border-radius: 50%; /* Make the follower profile image round */
+  margin-right: 10px; /* Add spacing between profile image and username */
+}
+
+.follower-username {
+  flex-grow: 1;
+    color: black !important; /* Change the color to red */
+  color: white; /* Allow the username to take up remaining space */
+}
